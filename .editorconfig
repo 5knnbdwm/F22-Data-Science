@@ -1,0 +1,7 @@
+# http://editorconfig.org
+2	root = true
+3	
+4	[*]
+5	indent_style = tab
+6	indent_size = 4
+7	end_of_line = lf
