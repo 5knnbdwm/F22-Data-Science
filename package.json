@@ -1,0 +1,36 @@
+{
+  "name": "uni-f22-data-science",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "rm -rf ./dist/ && npx tsc-watch --onSuccess 'node ./dist/'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5knnbdwm/F22-Data-Science.git"
+  },
+  "author": "5knnbdwm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5knnbdwm/F22-Data-Science/issues"
+  },
+  "homepage": "https://github.com/5knnbdwm/F22-Data-Science#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.15",
+    "@types/prompts": "^2.0.14",
+    "@types/readline-sync": "^1.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "prompts": "^2.4.2"
+  }
+}

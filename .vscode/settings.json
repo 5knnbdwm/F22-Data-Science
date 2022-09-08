@@ -1,8 +1,0 @@
-{
-	"python.linting.pylintEnabled": true,
-	"python.linting.enabled": true,
-	"editor.tabSize": 4,
-	"python.linting.pylintArgs": [
-		"--disable=C0111"
-	]
-}

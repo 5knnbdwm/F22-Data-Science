@@ -3,5 +3,5 @@
 3	
 4	[*]
 5	indent_style = spaces
-6	indent_size = 4
+6	indent_size = 2
 7	end_of_line = lf
