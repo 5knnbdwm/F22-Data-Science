@@ -1,16 +1,23 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "./src",
   },
+  "include": [
+    "src",
+    // "src/**/*.txt",
+    "./src/project_1_1/national/yob2021.csv",
+  ],
+  "exclude": [
+    "node_modules",
+    // "src/**/**/*.pdf",
+    // "src/**/output/",
+    // "src/**/*.md",
+    // "src/**/*.zip",
+  ],
   "typeRoots": [
     "../node_modules/types",
     "../types"
   ],
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
 }

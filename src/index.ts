@@ -15,7 +15,7 @@ const askUserWrapper = async (
   if (selectedFolder === "") selectedFolder = await askUserInput(folder);
   if (selectedFolder !== "cancel") {
     await callProject(selectedFolder);
-    askUserWrapper(preSelectedFolder, folder);
+    await askUserWrapper(preSelectedFolder, folder);
   }
 
   return;
@@ -48,12 +48,12 @@ const main = async () => {
     (item: string) => !(item.includes(".js") || item.includes(".ts"))
   );
 
-  let selectedFolder = undefined as string | undefined;
+  const selectedFolder = undefined as string | undefined;
 
-  if (process.env.FOLDER !== undefined) {
-    if (allFolders.includes(process.env.FOLDER))
-      selectedFolder = process.env.FOLDER;
-  }
+  // if (process.env.FOLDER !== undefined) {
+  //   if (allFolders.includes(process.env.FOLDER))
+  //     selectedFolder = process.env.FOLDER;
+  // }
 
   askUserWrapper(selectedFolder, allFolders);
 };
