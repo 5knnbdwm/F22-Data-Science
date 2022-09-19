@@ -1,20 +1,17 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
+    "target": "es2016", 
+    "module": "commonjs",  
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "rootDir": "./src",
   },
-  "include": [
-    "src",
-    // "src/**/*.txt",
-    "./src/project_1_1/national/yob2021.csv",
-  ],
   "exclude": [
     "node_modules",
-    // "src/**/**/*.pdf",
-    // "src/**/output/",
-    // "src/**/*.md",
-    // "src/**/*.zip",
+    "dist",
+    "**/*.test.ts"
   ],
   "typeRoots": [
     "../node_modules/types",

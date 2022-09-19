@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./dist/ && npx tsc -p ",
-    "dev": "rm -rf ./dist/ && npx tsc-watch --onSuccess 'node ./dist/'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 \"src/**/*.txt\" dist",
+    "dev": "npm run clean && npm run copy-files && npx tsc-watch --onSuccess 'node ./dist/'"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,9 @@
     "@types/prompts": "^2.0.14",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.23.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2"
   },
