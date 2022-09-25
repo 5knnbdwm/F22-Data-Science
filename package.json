@@ -20,7 +20,7 @@
   "homepage": "https://github.com/5knnbdwm/F22-Data-Science#readme",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
-    "@types/node": "^18.7.15",
+    "@types/node": "^18.7.18",
     "@types/prompts": "^2.0.14",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
@@ -28,10 +28,12 @@
     "eslint": "^8.23.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
     "typescript": "^4.8.2"
   },
   "dependencies": {
     "arquero": "^5.1.0",
-    "prompts": "^2.4.2"
+    "prompts": "^2.4.2",
+    "tsconfig-paths": "^4.1.0"
   }
 }
