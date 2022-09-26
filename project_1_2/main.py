@@ -24,16 +24,12 @@ if __name__ == "__main__":
 
     for year in range(1880,2022):
         filename = "./national/yob" + str(year) + ".txt"
-        # print(filename)
         csv_data = pd.read_csv(filename, names=["name", "gender", "amount"])
         df_year = pd.DataFrame(csv_data)
         df_year['year'] = year
-        # print(df_year)
         df_all = pd.concat([df_all, df_year])
-        # pd.concat([male_top5_df, female_top5_df])
 
     df_all.reset_index()
-
 
     print("---")
     print("task 3")
@@ -69,10 +65,21 @@ if __name__ == "__main__":
     print("task 5")
     print("---")
 
-
     fig, ax = plt.subplots()
 
-    names = ['Madonna', 'Lance', 'Barack', 'Katrina', 'Luke', 'Leia', 'Frida', 'Arielle', 'Harley', 'Tyrion', 'Khaleesi']
+    names = [
+        'Madonna',
+        'Lance',
+        'Barack',
+        'Katrina',
+        'Luke',
+        'Leia',
+        'Frida',
+        'Arielle',
+        'Harley',
+        'Tyrion',
+        'Khaleesi'
+    ]
 
     for name in names:
         df_all_year_name = df_all.loc[df_all['name']==name]
