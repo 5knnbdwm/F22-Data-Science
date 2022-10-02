@@ -65,7 +65,7 @@ if __name__ == "__main__":
     print("task 5")
     print("---")
 
-    fig, ax = plt.subplots()
+    _, ax = plt.subplots()
 
     names = [
         'Madonna',
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     for name in names:
         df_all_year_name = df_all.loc[df_all['name']==name]
-        ax.plot(df_all_year_name['year'], df_all_year_name['amount'], label=name)
+        ax.plot(df_all_year_name['year'], df_all_year_name['amount'], label=name, linewidth=0.5)
         ax.legend()
 
     plt.savefig("df_all_year_names.png", dpi=150)
