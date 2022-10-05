@@ -18,7 +18,7 @@ if __name__ == "__main__":
     df_all = pd.DataFrame()
 
     for year in range(1880,2022):
-        filename = "./national/yob" + str(year) + ".txt"
+        filename = "./input/yob" + str(year) + ".txt"
         csv_data = pd.read_csv(filename, names=["name", "gender", "amount"])
         df_year = pd.DataFrame(csv_data)
         df_year['year'] = year

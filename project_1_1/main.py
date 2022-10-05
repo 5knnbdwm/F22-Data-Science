@@ -4,7 +4,7 @@ project_1_1
 import pandas as pd
 
 if __name__ == "__main__":
-    csv_data = pd.read_csv("./national/yob2021.txt", names=["name", "gender", "amount"])
+    csv_data = pd.read_csv("./input/yob2021.txt", names=["name", "gender", "amount"])
     df = pd.DataFrame(csv_data, )
 
     # print("---")
