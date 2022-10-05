@@ -131,3 +131,5 @@ dmypy.json
 # Custom
 *.png
 .DS_Store
+# see project_2_1
+ECA*
